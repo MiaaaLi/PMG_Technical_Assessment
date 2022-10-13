@@ -124,7 +124,7 @@ Select brand_id, store_location, revenue
 From store_revenue
 Order by revenue desc;
 
--- Answer: Based on the calculation of click through rate (CTR) by state, revenue per click (RPC) by state and total revenue by store,  store with brand_id 2 in CA is the most efficient one
+-- Answer: Based on the calculation of click through rate (CTR) by state, revenue per click (RPC) by state and total revenue by store,  store with brand_id 2 in CA is the most efficient one.
 -- However, the CTR of stores in MN is around four times of other stores -- If we can get the total revenue of stores in MN maybe we can further confirm that stores in MN have higher efficency than stores in CA.
 
 
@@ -146,6 +146,8 @@ Group by store_location
 ) t
 ) t1
 Where t1.rw_no <= 10;
+
+
 
 
 
